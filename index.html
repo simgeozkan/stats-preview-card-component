@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Big Shoulders Display', cursive;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+    }
+
+    .container {
+      background-color: hsl(233, 47%, 7%);
+      width: 100%;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container-2 {
+      display: flex;
+      position: relative;
+      width: 80%;
+      height: 300px;
+      background-color: hsl(244, 38%, 16%);
+      border-radius: 5px;
+    }
+
+    .right {
+      width: 50%;
+
+
+      /* opacity: 0.2; */
+
+    }
+
+    .left {
+      width: 50%;
+      padding: 2% 6%;
+    }
+
+    span {
+      color: purple;
+    }
+
+
+    h1 {
+      color: white;
+    }
+
+    p {
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    h3 {
+      color: white;
+      display: inline-block;
+      margin-right: 70px;
+      margin-bottom: 0;
+    }
+
+    h6 {
+      color: hsla(0, 0%, 100%, 0.6);
+      display: inline-block;
+      margin-right: 45px;
+      margin-top: 0;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+
+    .img-right {
+      width: 100%;
+      height: 100%;
+
+    }
+
+    .cover {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: purple;
+      opacity: 0.6;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media screen and (max-width:380px) {
+      .container-2 {
+        flex-direction: column;
+        height: 600px;
+        padding: 2% 3%;
+        font-size: 15px;
+        position: relative;
+        box-sizing: border-box;
+
+
+      }
+
+      .container {
+        height: 800px;
+      }
+
+      .right {
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        top: 0;
+        left: 0;
+        opacity: 0.4;
+
+      }
+
+      .cover {
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        top: 0;
+        left: 0;
+        background-color: purple;
+
+
+      }
+
+
+
+      .left {
+        position: absolute;
+        display: block;
+        width: 100%;
+        bottom: 50px;
+        left: 0;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      h3 {
+        display: block;
+      }
+
+      h6 {
+        display: none;
+      }
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="container-2">
+
+      <div class="left">
+        <h1>
+          Get <span>insights</span> that help your business grow.</h1>
+        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.</p>
+        <h3>10K+</h3>
+        <h3>314</h3>
+        <h3> 12M+</h3>
+        <h6>COMPANİES</h6>
+        <h6>TEMPLATES</h6>
+        <h6>QUERIES</h6>
+
+
+      </div>
+
+      <div class="cover">
+
+      </div>
+
+      <div class="right ">
+        <img class="img-right" src="images/image-header-desktop.jpg">
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Simge ÖZKAN</a>.
+  </div>
+</body>
+
+</html>
